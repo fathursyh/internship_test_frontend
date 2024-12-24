@@ -6,8 +6,15 @@ class HomeContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(children: [
-      HomeNav()
-    ],);
+    return Column(
+      children: [
+        const HomeNav(),
+        Container(
+          color: Colors.blue,
+          width: MediaQuery.sizeOf(context).width,
+          height: 400,
+        ),
+      ],
+    );
   }
 }
