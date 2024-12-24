@@ -13,8 +13,8 @@ class HomePage extends StatelessWidget {
         centerTitle: true,
         title: Container(
           padding: EdgeInsets.zero,
-          width: MediaQuery.sizeOf(context).width * 0.75,
-          child: Row(
+          width: MediaQuery.sizeOf(context).width * 0.7,
+          child: const Row(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [

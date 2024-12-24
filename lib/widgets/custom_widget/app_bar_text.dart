@@ -13,7 +13,7 @@ class AppBarText extends StatelessWidget {
         style: const TextStyle(
           fontSize: 14,
           color: Colors.black87,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.w600,
         ),
       ),
     );

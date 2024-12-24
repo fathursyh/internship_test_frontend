@@ -6,30 +6,15 @@ class HomeLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Align(
-          alignment: Alignment.center,
-          child: Container(
-            height: 400,
-            width: MediaQuery.sizeOf(context).width,
-            color: Colors.lightBlueAccent,
-            child: const Placeholder(),
-          ),
+    return SingleChildScrollView(
+      child: Center(
+        child: Container(
+          padding: const EdgeInsets.symmetric(vertical: 24),
+          height: MediaQuery.sizeOf(context).height * 1.4,
+          width: MediaQuery.sizeOf(context).width * 0.7,
+          child: const HomeContent(),
         ),
-        SingleChildScrollView(
-          child: Center(
-            child: Container(
-              decoration: BoxDecoration(
-                color: Colors.green[100],
-              ),
-              height: MediaQuery.sizeOf(context).height * 1.4,
-              width: MediaQuery.sizeOf(context).width * 0.75,
-              child: const HomeContent(),
-            ),
-          ),
-        ),
-      ],
+      ),
     );
   }
 }
